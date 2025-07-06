@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TASKEGINER MARKET</title>
+  <style>
+    /* --- Gaya asli kamu (dipertahankan) --- */
+    :root {
+      --primary: #2c3e50;
+      --accent: #e74c3c;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background-color: #121212;
+      color: white;
+    }
+    #preloader {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      color: #00ff00;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      padding: 20px;
+    }
+    .typewriter {
+      white-space: pre-line;
+      border-right: 2px solid #00ff00;
+      animation: blink 0.7s infinite step-end;
+      font-size: 14px;
+      font-family: 'Courier New', monospace;
+    }
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+    .flash {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      background: white;
+      z-index: 9998;
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      pointer-events: none;
+    }
+    .container {
+      position: relative;
+      z-index: 10;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 1s ease;
+      padding: 20px;
+    }
+    .container.show {
+      opacity: 1;
+    }
+    .title-line {
+      font-size: 32px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      animation: pulseText 3s infinite ease-in-out;
+    }
+    .subtitle-line {
+      font-size: 40px;
+      font-weight: bold;
+      color: #00ffc3;
+      margin-top: 10px;
+      letter-spacing: 2px;
+      animation: pulseText 3s infinite ease-in-out;
+    }
+    @keyframes pulseText {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.03); opacity: 0.85; }
+    }
+    .button-container {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .link-button {
+      background: linear-gradient(135deg, #00ffc3, #0066ff);
+      color: white;
+      padding: 16px 32px;
+      font-size: 17px;
+      font-weight: bold;
+      border-radius: 12px;
+      text-decoration: none;
+      text-align: center;
+      transition: all 0.4s ease;
+      animation: glow 2.5s infinite ease-in-out;
+      box-shadow: 0 0 10px rgba(0, 255, 195, 0.3);
+      backdrop-filter: blur(6px);
+    }
+    .link-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(0, 255, 195, 0.6);
+    }
+    @keyframes glow {
+      0%, 100% { box-shadow: 0 0 10px rgba(0, 255, 195, 0.2); }
+      50% { box-shadow: 0 0 25px rgba(0, 255, 195, 0.6); }
+    }
+  </style>
+</head>
+<body>
+  <div id="preloader"><div id="typewriter" class="typewriter"></div></div>
+  <div class="flash" id="flash"></div>
+  <div id="particles-js"></div>
+  <div class="container" id="main-content">
+    <div class="title-line">WELCOME TO</div>
+    <div class="subtitle-line">TASKEGINER MARKET</div>
+    <div class="button-container">
+      <a href="https://taskeginer.github.io/Web-1/" class="link-button" target="_blank">JASA JOKI AKADEMIK</a>
+      <a href="https://taskeginer.github.io/Web-2/" class="link-button" target="_blank">JASA JOKI GAME</a>
+      <a href="https://taskeginer.github.io/Web-3/" class="link-button" target="_blank">JUBEL GAME</a>
+      <a href="https://taskeginer.github.io/Web-4/" class="link-button" target="_blank">TOP UP DANA</a>
+      <a href="https://taskeginer.github.io/Web-5/" class="link-button" target="_blank">FOLLOWERS</a>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 50 },
+        color: { value: "#ffffff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.4 },
+        size: { value: 2 },
+        line_linked: {
+          enable: true,
+          distance: 120,
+          color: "#ffffff",
+          opacity: 0.4,
+          width: 1
+        },
+        move: { enable: true, speed: 1.5 }
+      }
+    });
+  </script>
+
+  <script>
+    const teks = [
+      "┌─[root@taskeGINER]─[~]",
+      "│ Connecting to gateway... 🔐",
+      "│ Injecting scripts... ⚙️",
+      "│ Bypassing firewall... 🔓",
+      "│ Access granted ✅",
+      "│ Cloning user interface...",
+      "│ Parsing encrypted data... 💾",
+      "│ Fetching database...",
+      "│ Compiling modules...",
+      "│ Verifying WhatsApp integration... ✅",
+      "│ Loading particle engine...",
+      "│ Activating responsive UI...",
+      "│ Finalizing dark mode shaders...",
+      "│ 🧠 Brainwave module: active",
+      "│ Launch protocol initialized...",
+      "└─ SYSTEM READY. Launching in 3... 2... 1 🚀"
+    ];
+
+    const speed = 40;
+    let index = 0, char = 0;
+    const target = document.getElementById("typewriter");
+    let loadingSelesai = false;
+
+    function tampilkanKontenLangsung() {
+      document.getElementById("preloader").style.display = "none";
+      document.getElementById("flash").style.display = "none";
+      document.getElementById("main-content").classList.add("show");
+      izinkanBack(); // aktifkan tombol back
+    }
+
+    function ketik() {
+      if (index < teks.length) {
+        if (char < teks[index].length) {
+          target.textContent += teks[index].charAt(char);
+          char++;
+          setTimeout(ketik, speed);
+        } else {
+          target.textContent += "\n";
+          index++;
+          char = 0;
+          setTimeout(ketik, 100);
+        }
+      } else {
+        const preloader = document.getElementById("preloader");
+        const flash = document.getElementById("flash");
+        flash.style.opacity = 1;
+        setTimeout(() => {
+          preloader.style.display = "none";
+          flash.style.opacity = 0;
+          flash.style.display = "none";
+          document.getElementById("main-content").classList.add("show");
+          sessionStorage.setItem("sudahLoad", "true");
+          izinkanBack(); // aktifkan tombol back setelah loading
+        }, 400);
+      }
+    }
+
+    function izinkanBack() {
+      loadingSelesai = true;
+    }
+
+    // Blok tombol back selama loading
+    window.addEventListener("load", () => {
+      const sudahLoad = sessionStorage.getItem("sudahLoad");
+      history.pushState(null, null, location.href); // Tambah state palsu
+      window.addEventListener("popstate", function () {
+        if (!loadingSelesai) {
+          history.pushState(null, null, location.href); // Kembalikan lagi
+        }
+      });
+
+      if (sudahLoad === "true") {
+        tampilkanKontenLangsung(); 
+      } else {
+        ketik(); 
+      }
+    });
+  </script>
+</body>
+</html>
